@@ -1,0 +1,22 @@
+{
+  "name": "create_tickets",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "client": {
+        "type": "string",
+        "description": "Client name",
+        "enum": [
+          "OVH",
+          "AVISO",
+          "SVA",
+          "BNETD"
+        ]
+      }
+    },
+    "required": [
+      "client"
+    ]
+  },
+  "description": "Use this function to create a ticket"
+}

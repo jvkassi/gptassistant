@@ -1,0 +1,16 @@
+{
+  "name": "list_projects",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "client": {
+        "type": "string",
+        "description": "Faire la recherche avec le nom du client"
+      }
+    },
+    "required": [
+      "numbers_of_tickets"
+    ]
+  },
+  "description": "Use this function to list the last opened tickets of redmine. you can get a maximum of 15 tickets each time"
+}

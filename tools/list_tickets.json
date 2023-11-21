@@ -1,0 +1,16 @@
+{
+  "name": "list_tickets",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "numbers_of_tickets": {
+        "type": "integer",
+        "description": "The number of last tickets to get. The maximum is 15."
+      }
+    },
+    "required": [
+      "numbers_of_tickets"
+    ]
+  },
+  "description": "Use this function to list the last opened tickets of redmine. you can get a maximum of 15 tickets each time"
+}

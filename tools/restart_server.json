@@ -1,0 +1,16 @@
+{
+  "name": "restart_server",
+  "description": "Restart server. We must have server_hostname before executing",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "server_hostname": {
+        "type": "string",
+        "description": "The hostname of the server"
+      }
+    },
+    "required": [
+      "server_hostname"
+    ]
+  }
+}
