@@ -17,7 +17,7 @@ TOOLS = {}
 directory_path = 'tools'
 
 # Iterate over each .py file in the directory
-for file_path in glob.glob(os.path.join(directory_path, '*.py')):
+for file_path in glob.glob(os.path.join(directory_path, '*/*.py')):
   module_name = os.path.basename(file_path)[:-3]  # Remove '.py' from filename
 
   # Create a module spec
@@ -34,7 +34,7 @@ for file_path in glob.glob(os.path.join(directory_path, '*.py')):
 print(TOOLS)
 
 DESCRIPTIONS = []
-for file_path in glob.glob(os.path.join(directory_path, '*.json')):
+for file_path in glob.glob(os.path.join(directory_path, '*/*.json')):
   with open(file_path, 'r') as file:
     print(file_path)
     tool = {"type": "function", "function": json.load(file)}
